@@ -1,10 +1,10 @@
-## 🎯 Habit Tracker - Weekly Tracking
+# 🎯 Habit Tracker - Weekly Tracking
 
-# Short Description and Key Features
+## Short Description and Key Features
 
 Habit Tracker is a simple Single-Page Application (SPA) implemented with pure HTML, CSS, and JavaScript. It is designed to help users track their daily habits in real-time, calculate current streaks, and persist data locally in the browser's memory (localStorage).
 
-# Key Features:
+## Key Features:
 
 - Habit Addition: Users can dynamically add new habits to track.
 - Weekly Tracking: Displays the last seven days (D-6, D-5, ..., Yesterday, Today).
@@ -13,41 +13,41 @@ Habit Tracker is a simple Single-Page Application (SPA) implemented with pure HT
 - Data Management: Supports data export (Export JSON), data import (Import JSON), and a full data reset.
 - Local Storage: All data is stored in the browser's localStorage between sessions.
 
-# How to Run Locally (Windows and macOS)
+## How to Run Locally (Windows and macOS)
 This application is a static web page that does not require a backend server. It can be opened directly in your browser.
 
-# Requirements:
+## Requirements:
 - A modern web browser (Chrome, Firefox, Edge, or Safari).
 - Files: index.html (or habit_tracker.html), app.js, and styles.css (or equivalent files, if CSS is inline).
 
-# 1. File Placement
+## 1. File Placement
 Ensure you have the following files in the same folder:
 - index.html (or habit_tracker.html - the main structure)
 - app.js (the JavaScript logic)
 - styles.css (the CSS styles, if separate)
 
-# 2. Opening the Application
+## 2. Opening the Application
 - Navigate to the folder where the files are located in your file explorer.
 - Double-click the index.html (or habit_tracker.html) file.
 - The file will automatically open in your default browser, and the application will be ready to use.
 
-# Screenshots
+## Screenshots
 
-![Main] (Main.png)
+![Main](Main.png)
 
-![ResponsiveView] (Responsive.png)
+![ResponsiveView](Responsive.png)
 
-![Habit] (Habit.png)
+![Habit](Habit.png)
 
 
-## Self-Assessment (According to Canvas Rubric Headings)
+# Self-Assessment (According to Canvas Rubric Headings)
 
-# Code Quality and Structure
+## Code Quality and Structure
 Assessment: I have adhered to the principles of clean, basic web technologies. The code is logically divided into an HTML structure, CSS styles (though now inline in the working file), and JavaScript logic.
 - The JavaScript logic utilizes clear DOM manipulation (rendering) and event handlers.
 - Global variables (state, weekKeys, ROWS_CONTAINER) are defined at the beginning of app.js, which resolved previous ReferenceError issues.
 
-# Functionality
+## Functionality
 Assessment: All required core functionalities are working:
 - Adding habits, marking days as completed, and deleting habits.
 - Streak calculation works correctly by checking consecutive days backward.
@@ -55,19 +55,19 @@ Assessment: All required core functionalities are working:
 - Data export and import work with JSON files.
 - Selecting future days is prevented both in the user interface and in the logic.
 
-# Usability and Accessibility
+## Usability and Accessibility
 Assessment: The user interface is responsive (using the viewport meta-tag and inline styles to support this). I have paid attention to accessibility:
 - Interactive elements (buttons) have clear aria-label and role="checkbox" attributes.
 - Focus (:focus) is styled to be visible.
 - Keyboard navigation is supported (Tab navigation and Enter/Space to activate the button).
 
-# Testing and Error Handling
+## Testing and Error Handling
 Assessment: Basic error handling is implemented:
 - try...catch blocks are used for handling JSON data (localStorage and import/export).
 - alert() and confirm() windows are used to provide feedback and confirm deletions.
 - The logic includes checks (if (!name), if (!h), if (dateKey > todayKey())) to prevent the application from crashing due to invalid input.
 
-## Reflection
+# Reflection
 
 Implementing this Habit Tracker project was an excellent exercise in understanding Vanilla JavaScript and traditional DOM manipulation. One of the biggest lessons learned was the relationship between State Management and UI rendering without a modern framework. Every user action (adding a habit, clicking a day) requires updating the entire application state (state) in memory (localStorage) and then completely re-drawing the user interface (render() function), which is a typical challenge in this architecture.
 
