@@ -5,7 +5,7 @@
 | Part | Description | Start Time |
 | :--- | :--- | :--- |
 | **I. Intro** | Greeting, project background, and the problem solved. | **0:00** |
-| **II. Overview** | Architecture, technologies used, and core features (7-day lookback). | **0:48** |
+| **II. Overview** | Architecture, technologies used, and core features. | **0:48** |
 | **III. Demo** | Data entry, streak processing, and JSON export flow. | **1:24** |
 | **IV. Conclusion** | Summary and key learning: The challenge of DOM performance optimization. | **2:17** |
 
@@ -17,7 +17,7 @@ Habit Tracker is a simple Single-Page Application (SPA) implemented with pure HT
 
 - Habit Addition: Users can dynamically add new habits to track.
 - Weekly Tracking: Displays the last seven days (D-6, D-5, ..., Yesterday, Today).
-- Status Logging: Clicking day cells marks a habit as completed or uncompleted. Logging for future dates is prevented.
+- Status Logging: Clicking day cells marks a habit as completed or uncompleted.
 - Streak Calculation: Automatically calculates consecutive days of successful completion.
 - Data Management: Supports data export (Export JSON), data import (Import JSON), and a full data reset.
 - Local Storage: All data is stored in the browser's localStorage between sessions.
@@ -27,17 +27,17 @@ This application is a static web page that does not require a backend server. It
 
 ## Requirements:
 - A modern web browser (Chrome, Firefox, Edge, or Safari).
-- Files: index.html (or habit_tracker.html), app.js, and styles.css (or equivalent files, if CSS is inline).
+- Files: index.html, app.js, and styles.css.
 
 ## 1. File Placement
 Ensure you have the following files in the same folder:
-- index.html (or habit_tracker.html - the main structure)
+- index.html  (the main structure)
 - app.js (the JavaScript logic)
-- styles.css (the CSS styles, if separate)
+- styles.css (the CSS styles)
 
 ## 2. Opening the Application
 - Navigate to the folder where the files are located in your file explorer.
-- Double-click the index.html (or habit_tracker.html) file.
+- Double-click the index.html file.
 - The file will automatically open in your default browser, and the application will be ready to use.
 
 ## Screenshots
@@ -52,7 +52,7 @@ Ensure you have the following files in the same folder:
 # Self-Assessment (According to Canvas Rubric Headings)
 
 ## Code Quality and Structure
-Assessment: I have adhered to the principles of clean, basic web technologies. The code is logically divided into an HTML structure, CSS styles (though now inline in the working file), and JavaScript logic.
+Assessment: I have adhered to the principles of clean, basic web technologies. The code is logically divided into an HTML structure, CSS styles and JavaScript logic.
 - The JavaScript logic utilizes clear DOM manipulation (rendering) and event handlers.
 - Global variables (state, weekKeys, ROWS_CONTAINER) are defined at the beginning of app.js, which resolved previous ReferenceError issues.
 
@@ -62,7 +62,6 @@ Assessment: All required core functionalities are working:
 - Streak calculation works correctly by checking consecutive days backward.
 - localStorage persists the state.
 - Data export and import work with JSON files.
-- Selecting future days is prevented both in the user interface and in the logic.
 
 ## Usability and Accessibility
 Assessment: The user interface is responsive (using the viewport meta-tag and inline styles to support this). I have paid attention to accessibility:
