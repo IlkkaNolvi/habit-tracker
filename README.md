@@ -1,5 +1,14 @@
 # 🎯 Habit Tracker - Weekly Tracking
 
+## Video Presentation Timestamps
+
+| Part | Description | Start Time |
+| :--- | :--- | :--- |
+| **I. Intro** | Greeting, project background, and the problem solved. | **0:00** |
+| **II. Overview** | Architecture, technologies used, and core features (7-day lookback). | **0:48** |
+| **III. Demo** | Data entry, streak processing, and JSON export flow. | **1:24** |
+| **IV. Conclusion** | Summary and key learning: The challenge of DOM performance optimization. | **2:17** |
+
 ## Short Description and Key Features
 
 Habit Tracker is a simple Single-Page Application (SPA) implemented with pure HTML, CSS, and JavaScript. It is designed to help users track their daily habits in real-time, calculate current streaks, and persist data locally in the browser's memory (localStorage).
